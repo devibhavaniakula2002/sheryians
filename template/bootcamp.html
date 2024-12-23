@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} 
+bootcamp
+{% endblock title %}
+
+{% block css %} 
+<link rel="stylesheet" href="{% static 'css/bootcamp.css' %}">
+{% endblock css %}
+
+{% block body %} 
+
+<div id="bootcamp_header">
+    <h1 id="bootcamp_heading">6 months In-House Bootcamp programme   - Kodr.</h1>
+</div>
+<div id="bootcamp_yt">
+    <iframe width="696" height="391" src="https://www.youtube.com/embed/pOGLAlGCKFE" title="This Bootcamp Will Change Your Life: Kodr x Sheryians !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" id="bootcamp_youtube" allowfullscreen></iframe>
+</div>
+<span id="start_date_container">Starts On:11 Nov 2024</span>
+<span id="placement_assistance_container">Placement Assistance <img src="./../static/images/Blue_tick.webp" id="blue_tick_image" alt=""></span>
+<span id="bootcamp_price_container">
+    <h1 id="bootcamp_price_header" class="bootcamp_price">Price</h1>
+    <mark class="bootcamp_price" id="bootcamp_price_mark">  ₹ 59000</mark>
+    <small id="bootcamp_price_gst"  class="bootcamp_price">[50,000 + 18% Gst]</small>
+</span>
+<br>
+<button id="seats_button">Seats Are Full</button>
+<br>
+<h1 id="we_belive_heading" class="consistency_heading">we believe in,</h1>
+<br>
+<h1  class="consistency_heading"><mark id="consis_mark">Consistency.</mark>No shortcuts.</h1>
+<br>
+<span class="button_span">MERN Stack ⚡</span>
+<span class="button_span">Data Structures & Algorithm</span>
+<span class="button_span">DBMS - SQL 🤘</span>
+<br><br><br>
+<span class="button_span">CORE CS Subjects ⚙️</span>
+<span class="button_span">Placement Assistance 💰</span>
+<br>
+<span id="timing_heading">
+    <h1 id="non_stop_header" class="time_headers">Non-Stop</h1>
+    <br>
+    <mark id="hours_mark">5 Hours</mark><br>
+    <h1 id="non_stop_header" class="time_headers">Coding <small id="everyday">[Everyday]</small></h1>
+</span>
+<br>
+<span id="day_content">
+    Monday To Saturday. 11:00 AM To 4:00PM. 
+</span>
+<div class="section">
+    <div class="heading-container">
+      <h2>HTML/CSS</h2>
+      <label class="toggle-label" for="html-css-toggle">Expand</label>
+    </div>
+    <input type="checkbox" id="html-css-toggle">
+    <ul class="toggle-list">
+      <li>HTML Basics</li>
+      <li>Semantic HTML</li>
+      <li>Forms and Validation</li>
+      <li>Multimedia Elements (Audio, Video)</li>
+      <li>CSS Fundamentals</li>
+      <li>CSS Box Model</li>
+      <li>Flexbox</li>
+      <li>Grid Layout</li>
+      <li>CSS Animations</li>
+      <li>Transitions</li>
+      <li>Keyframe Animations</li>
+      <li>Responsive Design</li>
+      <li>Media Queries</li>
+      <li>CSS Variables</li>
+      <li>CSS Frameworks (TailwindCSS)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="heading-container">
+      <h2>JavaScript</h2>
+      <label class="toggle-label" for="javascript-toggle">Expand</label>
+    </div>
+    <input type="checkbox" id="javascript-toggle">
+    <ul class="toggle-list">
+      <li>Introduction to JavaScript</li>
+      <li>Functions (Declaration, Expression, Arrow)</li>
+      <li>Scope (Global, Local, Block)</li>
+      <li>Closures</li>
+      <li>Callbacks</li>
+    </ul>
+  </div>
+{% endblock body %}

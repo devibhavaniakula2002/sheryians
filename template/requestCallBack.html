@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.callback-form {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    background: #333;
+    color: #fff;
+}
+
+button {
+    background:blue;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+body, html{
+    
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+    </style>
+    <script>
+        document.getElementById("show-form").onclick = function () {
+    document.querySelector(".modal").style.display = "flex";
+    };
+    </script>
+</head>
+<body>
+    <div class="modal">
+        <div class="callback-form">
+            <h2>Request a Callback</h2>
+            <p>Fill the form below to request a callback from our team.</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name">
+    
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="📞 Phone">
+    
+                <label for="datetime">Select Date and Time</label>
+                <input type="datetime-local" id="datetime">
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

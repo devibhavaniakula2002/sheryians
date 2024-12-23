@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+    {% block css %}{% endblock css %}
+    {% block js %}
+    {% endblock js %}
+    <link rel="icon" href="{% static 'images/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <nav id="nav_bar">
+        <img id="logo_icon" src="{% static 'images/logo.png' %}" alt="">
+        <span id="logo_head">Dev's coding school</span>
+        <a href="{% url 'sheryiansapp:home' %}"><button class="buttons" id="home_button">Home</button></a>
+        <a href="{% url 'sheryiansapp:courses' %}"><button class="buttons"id=courses_button>Courses</button></a>
+        <a href="{% url 'sheryiansapp:bootcamp' %}"><button class="buttons" id="bootcamp_button">Bootcamp(Kodr)</button></a>
+        <a href="{% url 'sheryiansapp:RequestCallback' %}"><button class="buttons" id="request_button"> Request Callback</button></a>
+        <a href="{% url 'sheryiansapp:signin' %}"><button class="buttons" id="signin_button">Sign In</button></a>
+    </nav>
+    {% block body %}
+    {% endblock body %}
+   <div id="main_last_footer">
+    <div id="lastinfo">
+        <div id="connect">
+            <img id="sherlogo" src="{% static 'images/logo.png' %}" alt="">
+            <p id="socials">Let's connect with our socials</p>
+            <img id="instalogo" src="{% static 'images/instalogo.png' %}" alt="">
+            <img id="linkedinlogo" src="{% static 'images/linkedinlogo.png' %}" alt="">
+            <img id="githublogo" src="{% static 'images/discordicon.png' %}" alt="">
+            <img id="ytlogo" src="{% static 'images/youtubelogo.png' %}" alt="">
+            <img id="xlogo" src="{% static 'images/twitterlogo.png' %}" alt="">
+        </div>
+        <div id="info">
+            <h5 id="companyid" class="info_buttons">COMPANY</h5>
+            <p class="info_buttons">About Us</p>
+            <p class="info_buttons">Support</p>
+            <p class="info_buttons">Privacy Policy</p>
+            <p class="info_buttons">Terms and Condition</p>
+            <p class="info_buttons">Pricing and Refund</p>
+            <p class="info_buttons">Hire From Us</p>
+            <p class="info_buttons">Bug Bounty</p>
+        </div>
+        <div id="community">
+            <h5 id="communityid">COMMUNITY</h5>
+            <p class="inanddi">Inertia</p>
+            <p class="inanddi">Discord</p>
+        </div>
+        <div id="touch">
+            <h5 id="touchid">Get In Touch</h5>
+            <p class="phn">+91 6309877894</p>
+            <p class="phn">+91 9652988462</p>
+            <p class="phn">hello@devi.com</p>
+            <p class="phn">23-B,Indrapuri Sector  C, <br>Bhopal(MP),462021</p>
+        </div>
+    </div>
+    <footer id="footer">Copyright <span id="#cpy">&copy</span> 2024 Devi Bhavani Akula Pvt. Ltd. <br><span id="all">All Rights Reserved.</span> </footer>
+   </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Signin
+{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/signin.css' %}">
+{% endblock css %}
+
+{% block body %}
+<div id="signin_main_division_phone" class="division active">
+    <h2 id="heading">Sign In</h2>
+    <button onclick="showDivision('phone')" id="phone_button">Phone</button>
+    <button onclick="showDivision('email')" id="email_button">Email</button><br>
+    <div id="phone_container">
+        <label id="mobile_number">Mobile Number*</label><br>
+        <input type="text" name="MobileNumber" id="mobile_number_inputbox" placeholder="Enter Your Mobile Number">
+        <div id="last_container_phone">
+            <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=offline&scope=profile%20email&prompt=consent&response_type=code&client_id=64340559579-vsfhpema2m1qt0ghom6fopidmeoqe16m.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsheryians.com%2Fsignin%2Fgoogle%2Fcallback&service=lso&o2v=2&ddm=1&flowName=GeneralOAuthFlow"><button class="buttons_last" id="google_button"><img id="googleicon" src="{% static 'images/googleicon.png' %}" alt=""><span id="continue_with_google_text">Continue with Google</span></button></a>
+            <a href="https://sheryians.com/signup/newuser"><button class="buttons_last" id="create_button"><img id="account_icon" src="{% static 'images/add_user_icon.png' %}" alt=""><span id="create_account_text">Create a New Account</span></button></a>
+        </div> 
+    </div>  
+</div>
+<div id="signin_main_division_eml" class="division">
+    <h2 id="heading_eml">Sign In</h2>
+    <button onclick="showDivision('phone')" id="phone_button_eml">Phone</button>
+    <button onclick="showDivision('email')" id="email_button_eml">Email</button><br>
+    <div id="email_container_eml">
+        <div id="inputs_division_eml">
+            <label id="email_address_label_eml" >Email address</label><br>
+            <input type="text" name="EmailAddress" id="email_address_inputbox_eml" placeholder="Enter your email address">
+            <label id="password_label_eml" >Password</label><br>
+            <input type="password" name="Password" id="password_inputbox_eml" placeholder="Enter your password here">
+            <img onclick="toHide()" id="eye_icon" src="{% static 'images/eye.png' %}" alt=""><br>
+            <button id="continue_button">Continue</button>
+            <fieldset id="legend_line">
+                <legend id="legend_or"> Or </legend>
+            </fieldset>
+        </div>
+        <div id="last_container_email">
+            <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=offline&scope=profile%20email&prompt=consent&response_type=code&client_id=64340559579-vsfhpema2m1qt0ghom6fopidmeoqe16m.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsheryians.com%2Fsignin%2Fgoogle%2Fcallback&service=lso&o2v=2&ddm=1&flowName=GeneralOAuthFlow"><button class="buttons_last" id="google_button"><img id="googleicon" src="{% static 'images/googleicon.png' %}" alt=""><span id="continue_with_google_text">Continue with Google</span></button></a>
+            <a href="https://sheryians.com/signup/newuser"><button class="buttons_last" id="create_button"><img id="account_icon" src="{% static 'images/add_user_icon.png' %}" alt=""><span id="create_account_text">Create a New Account</span></button></a>
+        </div>
+    </div>
+</div>
+<script>
+    function toHide(){
+        var password=document.getElementById("password_inputbox_eml");
+        const passwordType = password.type === "password" ? "text" : "password";
+        password.type = passwordType;
+    }
+    function showDivision(type) {
+            const phoneDiv = document.getElementById('signin_main_division_phone');
+            const emailDiv = document.getElementById('signin_main_division_eml');
+            if (type === 'phone') {
+                phoneDiv.classList.add('active'); // Show phone division
+                emailDiv.classList.remove('active'); // Hide email division
+            } else if (type === 'email') {
+                emailDiv.classList.add('active'); // Show email division
+                phoneDiv.classList.remove('active'); // Hide phone division
+            }
+        }
+</script>
+{% endblock body %}

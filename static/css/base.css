@@ -1,0 +1,222 @@
+@font-face {
+    font-family: NeueMachina ;
+    src: url(../fonts/NeueMachinaFreeforPersonalUse/NeueMachinaRegular.otf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: NeueMachina;
+}
+@font-face {
+    font-family: "Helvetica1";
+    src: url(../fonts/helvetica/Helvetica-Bold.ttf);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#nav_bar{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+.buttons{
+    background-color: transparent;
+    font-size: 13.6px;
+    position: relative;
+    left: 34%;
+    margin-left: 2.5%;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    bottom: 12.5px;
+    cursor: pointer;
+}
+#logo_icon{
+    width: 21px;
+    position: relative;
+    left: 5%;
+    bottom: 5px;
+}
+#logo_head{
+    cursor: pointer;
+    position: relative;
+    bottom: 11px;
+    left: 5.2%;
+    font-size: 15.5px;
+    color:white;
+}
+#courses_button{
+    left: 34.65%;
+}
+#bootcamp_button{
+    left: 35.3%;
+}
+#request_button{
+    left: 36%;
+}
+#signin_button{
+    position: relative;
+    left: 35.7%;
+    width: 92px;
+    height: 34px;
+    background-color: #24cfa6;
+    color: black;
+    font-size: 15px;
+    font-weight: 545;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+/* footer */
+#lastinfo{
+    width: 96%;
+    height: 450px;
+    border-top: 0.5px rgba(255, 255, 255, 0.393) solid;
+    border-bottom: 0.5px rgba(255, 255, 255, 0.393) solid;
+    position: relative;
+    left: 35px;
+    top: 1300px;
+    margin-bottom: 8px;
+}
+#footer{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.8px;
+    position: relative;
+    top: 1300px;
+    margin-left: 41.7%;
+    /* bottom: 26px; */
+    line-height: 18px;
+    padding-top: 17px;
+    padding-bottom: 25px;
+}
+#all{
+    position: relative;
+    left: 4.5%;
+    font-family: helvetica;
+}
+#sherlogo,#instalogo,#linkedinlogo,#githublogo,#ytlogo,#xlogo{
+    width: 25px;
+    display: inline;
+}
+
+#sherlogo{
+    width: 42.4px;
+    position: relative;
+    left: 13%;
+    top: 110px;
+}
+#socials{
+    position: relative;
+    top: 125px;
+    left: 13%;
+    word-spacing: -2px;
+    font-size: 13.9px;
+    color: white;
+    font-family: helvetica;
+    /* display: inline; */
+}
+#connect{
+    width: 270px;
+    height: 420px;
+    color: white;
+}
+#instalogo{
+    width: 26px;
+    position: relative;
+    left: 13%;
+    top: 140px;
+}
+#linkedinlogo{
+    width: 19px;
+    position: relative;
+    left: 22%;
+    top: 137px;
+}
+#githublogo{
+    width: 24px;
+    position: relative;
+    left: 31.6%;
+    top: 140px;
+}
+#ytlogo{
+    width: 22px;
+    position: relative;
+    left: 41%;
+    top: 139px;
+}
+#xlogo{
+    width: 25px;
+    position: relative;
+    left: 49%;
+    top: 138px;
+}
+
+
+.info_buttons{
+    position: relative;
+    margin-bottom: 15.5px;
+    font-family: helvetica;
+}
+#info{
+    width: 200px;
+    height: 160px;
+    color: white;
+    position: relative;
+    top: -321.5px;
+    left: 37.1%;
+    font-size: 13.8px;
+    font-family: helvetica;
+}
+#companyid{
+    font-size: 15.6px;
+    margin-bottom: 23px;
+}
+
+#community{
+    width: 200px;
+    height: 160px;
+    color: white;
+    position: relative;
+    top: -483px;
+    left: 62.2%;
+    margin-bottom: 20px;
+    font-family: helvetica;
+}
+#communityid{
+    position: relative;
+    font-size: 15.6px;
+    font-family: helvetica;
+}
+.inanddi{
+    position: relative;
+    bottom: -24px;
+    font-size: 13.8px;
+    margin-bottom: 14px;
+    font-family: "Helvetica";
+}
+
+#touch{
+    width: 200px;
+    height: 160px;
+    color: white;
+    position: relative;
+    top: -661.5px;
+    left: 85.45%;
+}
+#touchid{
+    position: relative;
+    font-size: 15.6px;
+    font-family: helvetica;
+    margin-bottom: 23px;
+}
+.phn{
+    font-family: helvetica;
+    font-size: 14px;
+    margin-bottom: 15px;
+    word-spacing: -5px;
+}

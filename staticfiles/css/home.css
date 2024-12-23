@@ -1,0 +1,325 @@
+@font-face {
+    font-family: juana;
+    src: url(../fonts/DemoFonts/Fontspring-DEMO-juana-lightit.otf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../fonts/helvetica/Helvetica-Narrow\ Roman.ttf);
+}
+@font-face {
+    font-family: "Helvetica1";
+    src: url(../fonts/helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+    font-family: Helvetica2;
+    src: url(../fonts/helvetica/Helvetica\ Rounded\ Bold.otf);
+}
+@font-face {
+    font-family: NeueMachina;
+    src: url(../fonts/NeueMachinaFreeforPersonalUse/NeueMachinaRegular.otf);
+    src: url();
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+body{
+    background-color: black;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.main_text{
+    position: relative;
+    color: white;
+    font-size: 78px;
+    display: block;
+    text-align: center;
+    cursor: default;
+    margin-bottom: -32px;
+    top: 73px;
+    left: -3px;
+    font-weight: 100;
+}
+#good{
+    font-family: juana;
+}
+#mark_para,#mark_text1{
+    color: #24cfa6;
+    background-color: transparent;
+}
+#main_text3{
+    top: 73px;
+    left: -3px;
+}
+#para{
+    position: relative;
+    top: 80px;
+    left: 73.4%;
+    display: inline-block;
+    width: 190px;
+    color: white;
+    font-size: 12.6px; 
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif ;
+    line-height: 2.4vh;
+    cursor: default;
+    letter-spacing: -.25px;
+}
+#check_anchor{
+    text-decoration: none;
+    color: black;
+    background-color: #24cfa6;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+    cursor: pointer;
+    font-family: "Helvetica1";
+    padding:0.59em 1.75em;;
+    position: relative;
+    left: 23.63%;
+    top: 112px;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+#bottom_division{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 200px;
+}
+.social{
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    font-family: Helvetica2;
+    font-weight: bold;
+    position: relative;
+    left: 30%;
+    display: inline-block;
+    color: white;
+    cursor: default;
+    top: 30px;
+    line-height: 35px;
+}
+#social1{
+    left: 26.7%;
+    line-height: 35px;
+}
+#social2{
+    left: 29%;
+}
+#social3{
+    left: 31%;
+}
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Helvetica2;
+    width: fit-content;
+}
+.heading_down{
+    letter-spacing: 2px;
+    font-size: 16px;
+    width: fit-content;
+}
+#view2_division{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 380px;
+    font-size: 40px;
+    color: white;
+    line-height: 1em;
+    letter-spacing: 1px;
+}
+#view2_division_text2{
+    color: #24cfa6;
+    background-color: transparent;
+    left: 31.5%;
+}
+.view2_division_text{
+    position: relative;
+    left: 23.5%;
+}
+#youtube_video{
+    position: relative;
+    top: 415px;
+    left: 16.3%;
+    border-radius: 30px;
+}
+#explore_anchor{
+    text-decoration: none;
+    color: black;
+    background-color: #24cfa6;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: Helvetica1;
+    padding:0.59em 1.7em;;
+    position: relative;
+    top: 495px;
+    right: 26.5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#head_course{
+    font-size: 45px;
+    color: white;
+    position: relative;
+    top: 650px;
+    left: 73px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+#main{
+    width: 100%;
+    height: 1050px;
+    /* background-color: rgb(230, 106, 106); */
+    position: relative;
+    top: 715px;
+}
+.images_division{
+    width: 400px;
+    height: 450px;
+    position: relative;
+    left: 55px;
+    display: inline-block;
+    background-color: rgb(45, 39, 39);
+    border-radius: 10px ;
+    margin-left: 15px;
+}
+.main_anchor{
+    text-decoration: none;
+}
+.course_images{
+    width: 100%;
+    height: 47%;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+.course_names_division{
+    width: 95%;
+    height: 47%;
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+.course_names_headings1,.course_names_headings2{
+    color: white;
+    font-family: Helvetica1;
+    font-size: 22px;
+    font-weight: 300;
+    width: fit-content;
+}
+.course_names_languages{
+    position: relative;
+    top: 8px;
+    background-color: rgb(71, 70, 70);
+    color: white;
+    display: inline-block;
+    padding:  5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+.course_price_divsion{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 70px;
+}
+#mark_limited{
+    color: #24cfa6;
+    background-color: transparent;
+    position: relative;
+    left: 20px;
+    font-size: 22px;
+    font-family: Helvetica1;
+}
+#price{
+    color: white;
+    position: relative;
+    left: 20px;
+    font-family: Helvetica1;
+    width: fit-content;
+}
+#price_dupli #dupli{
+    position: relative;
+    left: 150px;
+    bottom: 28px;
+    color: gray;
+    font-size: 20px;
+    font-family: Helvetica1;
+    width: fit-content;
+}
+#Off_button{
+    position: relative;
+    left: 80%;
+    bottom:55%;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    font-family: Helvetica1;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#view_details_button{
+    width: 400px;
+    height: 50px;
+    background-color: #24cfa6;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    font-family: Helvetica1;
+}
+#top_companies_division{
+    width: fit-content;
+    font-size: 45px;
+    color: white;
+    position: relative;
+    top: 1000px;
+    left: 28%;
+}
+#mark_companies{
+    color: #24cfa6;
+    background-color: transparent;
+}
+#top_companies2line{
+    position: relative;
+    left: 27%;
+}
+#companies_img_division{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    top: 1030px;
+}
+#companies_image{
+    width: 72.5%;
+    height: 90%;
+    position: relative;
+    top: 2%;
+    left: 14%;
+}
+#explore_courses_button{
+    width: 240px;
+    height: 50px;
+    background-color: #24cfa6;
+    border-radius: 10px;
+    position: relative;
+    top: 138px;
+    right: 32%;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: "Helvetica2";
+    cursor: pointer;
+}

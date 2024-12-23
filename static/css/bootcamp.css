@@ -1,0 +1,230 @@
+@font-face {
+    font-family: juana;
+    src: url(../fonts/DemoFonts/Fontspring-DEMO-juana-lightit.otf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../fonts/helvetica/Helvetica-Narrow\ Roman.ttf);
+}
+@font-face {
+    font-family: "Helveticalight";
+    src: url(../fonts/helvetica/helvetica-light.ttf);
+}
+@font-face {
+    font-family: "Helvetica1";
+    src: url(../fonts/helvetica/Helvetica-Bold.ttf);
+}
+@font-face {
+    font-family: NeueMachina;
+    src: url(../fonts/NeueMachinaFreeforPersonalUse/NeueMachinaRegular.otf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+mark{
+    background-color: transparent;
+    color: #24cfa6;
+}
+#bootcamp_youtube{
+    display: inline-block;
+    position: relative;
+    left: 49%;
+    top: -260px;
+    border-radius: 15px;
+}
+#bootcamp_header{
+    position: relative;
+    left: 6%;
+    top: 48px;
+    width: 550px;
+    height: 300px;
+    display: inline-block;
+}
+#bootcamp_heading{
+    word-spacing: -1px;
+    line-height: 1.1;
+    font-family: Helvetica;
+    color: white;
+    font-size: 45px;
+}
+#start_date_container,#placement_assistance_container{
+    color: white;
+    font-family: helvetica;
+    text-align: center;
+    background-color: rgb(63, 61, 61);
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    position: relative;
+    top: -476px;
+    left: 6%;
+}
+#placement_assistance_container{
+    position: relative;
+    left: 7.5%;
+}
+#blue_tick_image{
+    height: 23px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    padding-right: 6px;
+}
+#bootcamp_price_container{
+    position: relative;
+    letter-spacing: 1px;
+    top: -390px;
+    left: -19.5%;
+}
+#bootcamp_price_header{
+    font-family: "Helvetica1";
+    color: white;
+    display: inline;
+}
+#bootcamp_price_mark{
+    font-family: helvetic;
+    letter-spacing: -1px;
+    font-size: 25px;
+}
+#bootcamp_price_gst{
+    font-size: 18px;
+    color: white;
+    font-family: helvetic1;
+    letter-spacing: -0.5px;
+}
+#seats_button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-family: helvetic;
+    font-size: 20px;
+    padding: 18px 22px;
+    background-color: #034e2c;
+    filter: blur(0.8px);
+    position: relative;
+    top: -350px;
+    left: 6%;
+}
+.consistency_heading{
+    color: white;
+    font-family: Helvetica;
+    position: relative;
+    left: 6%;
+    font-size: 87px;
+    top: -250px;
+    letter-spacing: -1px;
+    display: inline;
+}
+#consis_mark{
+    font-family: helvetica;
+}
+.button_span{
+    font-family: helvetica;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: rgb(53, 51, 51);
+    border-radius: 30px;
+    padding: 7px 25px;
+    position: relative;
+    top: -215px;
+    left: 6%;
+    font-size: 40px;
+    margin-right: 20px;
+}
+#timing_heading{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    left: 6%;
+    color: white;
+    font-family: helvetica;
+    font-size: 70px;
+    font-weight: 900;
+}
+#hours_mark,#non_stop_header{
+    font-family: helvetica;
+    font-size: 165px;
+    letter-spacing: -2px;
+    display: inline;
+}
+#everyday{
+    font-family: helvetica;
+    font-size: 60px;
+}
+#day_content{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: helvetica;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    left: 6%;
+    top: 35px
+}
+#main_last_footer{
+    position: relative;
+    top: -1000px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  .heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+  h2 {
+    margin: 0;
+    
+  }
+
+  .toggle-label {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 100px;
+  }
+
+  .toggle-label:hover {
+    background-color: #666;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .toggle-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display:none; /* Initially hidden */
+  }
+
+  .toggle-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #333;
+  }
+
+  input[type="checkbox"]:checked ~ .toggle-list {
+    display: block; /* Show the list when checkbox is checked */
+  }
